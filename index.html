@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bücherland</title>
+    <link rel="icon" href="./assets/jpg/logo.jpeg">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+     <!-- FONT font-awesome Einbindung CSS -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.6.0-web/css/all.min.css">
+
+    <style>
+
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1em; 
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(60deg, #b20c0c, darksalmon);
+    }
+
+    </style>
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/localStorage.js"></script>
+    <script src="./scripts/like.js"></script>
+    <script src="./scripts/comments.js"></script>
+
+
+</head>
+
+<body onload="render()">
+
+
+     <header>
+      <a href="https://www.buecherland.de" class="logo" alt="Bücherland"></a>
+     </header>    
+
+
+    <div>
+
+        <div class="sidebar">
+            <ul>
+             <li><a href="https://www.buecherland.de" class="a-tag">Home</a></li>
+             <li><a href="https://www.buecherland.de/index.php.33.html" class="a-tag">Veranstaltungen</a></li>
+             <li><a href="https://www.buecherland.de/index.php.32.html" class="a-tag">Preise</a></li>
+             <li><a href="https://www.buecherland.de/index.php.36.html" class="a-tag">Kontakt</a></li>
+            </ul>
+         </div>
+
+        <!-- Circular Menu Responsive -->
+
+        <div id="circularMenu" class="circular-menu">
+
+            <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+              <i class="fa fa-plus"></i>
+            </a>
+          
+            <menu class="items-wrapper"> <!-- Social Media + Icons -->
+              <a href="#" alt="" class="menu-item fa-brands fa-facebook"></a>
+              <a href="#" class="menu-item fa-brands fa-twitter" alt=""></a>
+              <a href="#" class="menu-item fa-brands fa-google-plus" alt=""></a>
+              <a href="#" class="menu-item fa-solid fa-phone" alt=""></a>
+            </menu>
+          
+          </div>
+          
+          
+          <div id="circularMenu1" class="circular-menu circular-menu-left active">
+          
+            <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+              <i class="fa fa-bars"></i>
+            </a>
+          
+            <menu class="items-wrapper"> <!-- Home Links -->
+              <a href="https://www.buecherland.de" class="menu-item fa fa-home" alt="home"></a>
+              <a href="https://www.buecherland.de/index.php.36.html" class="menu-item fa fa-user" alt="kontakt"></a>
+              <a href="https://www.buecherland.de/index.php.33.html" class="menu-item fa-solid fa-calendar-days" alt="veranstaltungen"></a>
+              <a href="https://www.buecherland.de/index.php.37.html" class="menu-item fa-solid fa-info" alt="impressum"></a>
+            </menu>
+          
+          </div>
+
+        <!-- Main Section  -->
+
+        <section id="section">
+        
+        </section>
+
+
+    </div>
+
+
+    <footer id="footer">
+         <div class="footer-container">© Copyright by Francisco Naranjo</div>
+    </footer>
+
+
+    
+</body>
+</html>
